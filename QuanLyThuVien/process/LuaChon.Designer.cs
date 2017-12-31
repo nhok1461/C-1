@@ -44,6 +44,7 @@
             this.btDocGia.TabIndex = 0;
             this.btDocGia.Text = "Đọc Giả";
             this.btDocGia.UseVisualStyleBackColor = true;
+            this.btDocGia.Click += new System.EventHandler(this.btDocGia_Click);
             // 
             // btSách
             // 

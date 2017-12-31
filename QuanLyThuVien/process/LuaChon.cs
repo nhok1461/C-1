@@ -12,6 +12,7 @@ namespace QuanLyThuVien.process
 {
     public partial class LuaChon : Form
     {
+        DocGia dg;
         public LuaChon()
         {
             InitializeComponent();
@@ -22,6 +23,13 @@ namespace QuanLyThuVien.process
             DialogResult t = MessageBox.Show("Bạn có muốn chắc chắn muốn thoát không .", "Thông Báo", MessageBoxButtons.OKCancel);
             if (t == DialogResult.OK)
                 Application.Exit();
+        }
+
+        private void btDocGia_Click(object sender, EventArgs e)
+        {
+            dg = new DocGia();
+            dg.Show();
+            this.Close();
         }
     }
 }

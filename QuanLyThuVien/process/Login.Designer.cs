@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 364);
+            this.ClientSize = new System.Drawing.Size(553, 378);
             this.Controls.Add(this.btLogin);
             this.Controls.Add(this.cbShowpass);
             this.Controls.Add(this.lbCorrect);
@@ -116,6 +116,7 @@
             this.Controls.Add(this.txtTaiKhoan);
             this.Controls.Add(this.lbMatKhau);
             this.Controls.Add(this.lbTaiKhoan);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Login";
             this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.Login_Load);
