@@ -16,5 +16,12 @@ namespace QuanLyThuVien.process
         {
             InitializeComponent();
         }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult t = MessageBox.Show("Bạn có muốn chắc chắn muốn thoát không .", "Thông Báo", MessageBoxButtons.OKCancel);
+            if (t == DialogResult.OK)
+                Application.Exit();
+        }
     }
 }
